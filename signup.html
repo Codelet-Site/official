@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sign up — Codelet</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="page-center">
+<main class="card auth-card">
+<h2>Create an account</h2>
+<form id="signupForm">
+<label>Username<input id="username" type="text" required maxlength="20"></label>
+<label>Email<input id="email" type="email" required></label>
+<label>Password<input id="password" type="password" required minlength="6"></label>
+<button class="btn" type="submit">Create account</button>
+</form>
+<p class="muted">Already have one? <a href="/login.html">Log in</a></p>
+</main>
+
+
+<script type="module" src="/assets/firebase-init.js"></script>
+<script type="module" src="/assets/auth.js"></script>
+</body>
+</html>
